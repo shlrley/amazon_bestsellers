@@ -1,4 +1,4 @@
-# amazon_bestsellers
+# amazon_bestsellers and other datasets
 
 
 ----
@@ -75,11 +75,14 @@
 5. `amazon_price` 
 
 
+
+
 **Dataset Description**
 - Rows: 366 
 - Columns: 27 
 - Unique books: 222 
 
+---
 
 **Tips For Data Wrangling**
 1. Use `ast.literal_eval()` to convert columns with lists (but that are string type) to list type so that you can explode the dataframe (similar to what was done in assignmnent 5) 
@@ -95,6 +98,7 @@ df = pd.read_pickle('amazon_conlit_goodreads_nyt.pkl')
 ```
 
 
+---
 
 ** This dataset is not perfect and there may be some incorrect matches (i.e the paperback version of a book in the amazon bestsellers may have been matched with a hardcover in the goodreads dataset etc., so be wary of columns such as price or publish date)
 
