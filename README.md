@@ -6,7 +6,7 @@ Dataset for use as part of the DSCI 320 final visualization project. University 
 
 **Merged Datasets**
 
-1. Amazon bestsellers ([link](https://www.kaggle.com/datasets/sootersaalu/amazon-top-50-bestselling-books-2009-2019)) 
+1. [Amazon bestsellers](https://www.kaggle.com/datasets/sootersaalu/amazon-top-50-bestselling-books-2009-2019) 
    - "Dataset on Amazon's Top 50 bestselling books from 2009 to 2019. Contains 550 books, data has been categorized into fiction and non-fiction using Goodreads."  
 2. Conlit ([link](https://figshare.com/articles/dataset/CONLIT/21166171/1?file=37535605))
    - "This dataset includes derived data on a collection of ca. 2,700 books in English published between 2001-2021 and spanning twelve different genres."
