@@ -65,11 +65,11 @@
 1. Amazon bestsellers ([link](https://www.kaggle.com/datasets/sootersaalu/amazon-top-50-bestselling-books-2009-2019)) 
 2. Conlit ([link](https://figshare.com/articles/dataset/CONLIT/21166171/1?file=37535605))
 3. Goodreads best books ever ([link](https://zenodo.org/record/4265096#.ZAgSxOzMKvA))
-4. New York Times bestsellers ([link](https://www.kaggle.com/datasets/dhruvildave/new-york-times-best-sellers))
+4. New York Times (NYT) bestsellers ([link](https://www.kaggle.com/datasets/dhruvildave/new-york-times-best-sellers))
 
 **Column Descriptions**
-1. `title`
-2. `amazon_author`
+
+
 3. `amazon_rating`
 4. `amazon_num_reviews`
 5. `amazon_price` 
@@ -94,8 +94,8 @@
 
 | Column      | Description | Dataset Source |
 | ----------- | ----------- |  -----------   |
-| ...      | ...       |                |
-| ...   | ...        |                |
+| 1. `title` | Title of the book (str) | Amazon |
+| 2. `amazon_author` | ...        |                |
 
 
 **Dataset Description**
