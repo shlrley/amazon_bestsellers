@@ -63,19 +63,12 @@
 **Merged Datasets**
 
 1. Amazon bestsellers ([link](https://www.kaggle.com/datasets/sootersaalu/amazon-top-50-bestselling-books-2009-2019)) 
+  - "Dataset on Amazon's Top 50 bestselling books from 2009 to 2019. Contains 550 books, data has been categorized into fiction and non-fiction using Goodreads."  
 2. Conlit ([link](https://figshare.com/articles/dataset/CONLIT/21166171/1?file=37535605))
 3. Goodreads best books ever ([link](https://zenodo.org/record/4265096#.ZAgSxOzMKvA))
 4. New York Times (NYT) bestsellers ([link](https://www.kaggle.com/datasets/dhruvildave/new-york-times-best-sellers))
 
 **Column Descriptions**
-
-
-3. `amazon_rating`
-4. `amazon_num_reviews`
-5. `amazon_price` 
-6. `amazon_year`
-7. `amazon_genre`
-8. `conlit_genre`
 9. ``
 10. ``
 11. ``
@@ -95,7 +88,16 @@
 | Column      | Description | Dataset Source |
 | ----------- | ----------- |  -----------   |
 | 1. `title` | Title of the book (str) | Amazon |
-| 2. `amazon_author` | ...        |                |
+| 2. `amazon_author` | Author (first and last name) of the book (str) | Amazon |
+| 3. `amazon_rating` | Rating of the book given by Amazon user on a scale of 1 to 5 (float) | Amazon |
+| 4. `amazon_num_reviews` | Number of written reviews of the book given on Amazon (int) | Amazon |
+| 5. `amazon_price`  | Price of the book as of October 13, 2020 (int) | Amazon |
+| 6. `amazon_year` | Year the book was ranked on the bestsellers list | Amazon |
+| 7. `amazon_genre` | Whether the book is fiction or non-fiction (str) | Amazon |
+| 8. `conlit_genre` |  | Amazon |
+|  |  |  |
+|  |  |  |
+|  |  |  |
 
 
 **Dataset Description**
