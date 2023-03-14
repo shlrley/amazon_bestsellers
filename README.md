@@ -2,6 +2,10 @@
 
 Dataset for use as part of the DSCI 320 final visualization project. University of British Columbia, 2023. 
 
+Please see the `data/` folder to download the following files: 
+- [`amazon_conlit_goodreads_nyt.csv`](https://github.com/shlrley/amazon_bestsellers/blob/main/data/amazon_conlit_goodreads_nyt.csv)
+- [`amazon_conlit_goodreads_nyt.pkl`](https://github.com/shlrley/amazon_bestsellers/blob/main/data/amazon_conlit_goodreads_nyt.pkl)
+
 ---
 
 ### **Merged Datasets**
