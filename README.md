@@ -1,62 +1,6 @@
 # amazon_bestsellers and other datasets
 
-
-----
-
-`amazon_bestsellers_df`
-**columns:**
-- `Name` > `title`
-- `Author` > `amazon_author`
-- `User Rating` > `amazon_rating`
-- `Reviews` > `amazon_num_reviews`
-- `Price` > `amazon_price`
-- `Year` > `amazon_year`
-- `Genre` > `amazon_genre`
-+ `title_id`
-
----
-
-`conlit_meta_df`
-**columns:** 
-- `Work_Title` > `title_id`
-- `Category` > `conlit_category`
-- `Language` > `conlit_language`
-- `Genre` > `conlit_genre1`
-- `Genre2` > `conlit_genre2`
-- `Pubdate` > `conlit_pubdate`
-- `Author_Last` > `conlit_author_last`
-- `Author_First` > `conlit_author_first`
-- `Translation` > `conlit_translation`  
-- `PubHouse` > `conlit_pubhouse`
-- `Prize` > `conlit_prize`
-- `WinnerShortlist` > `conlit_winnershortlist`
-- `Author_Gender` > `conlit_author_gender`
-- `Author_Nationality` > `conlit_author_nationality`
-- `goodreads_avg` > `conlit_goodreads_avg`
-- `total_ratings` > `conlit_total_ratings`
-
----
-
-`goodreads_bestbooksever_df`
-**columns:** 
-- `title` > `title_2`
-- `series` > `goodreads_series`
-- `author` > `goodreads_author`
-- `rating` > `goodreads_rating`
-- `language` > `goodreads_language`
-- `isbn` > `goodreads_isbn`
-- `genres` > `goodreads_genres`
-- `edition` > `goodreads_edition`
-- `publisher` > `goodreads_publisher`
-- `publishDate` > `goodreads_publish_date`
-- `firstPublishDate` > `goodreads_first_publish_date`
-- `awards` > `goodreads_awards`
-- `numRatings` > `goodreads_num_ratings`
-- `ratingsByStars` > `goodreads_ratings_by_stars`
-- `likedPercent` > `goodreads_liked_percent`
-- `price` > `goodreads_price`
-+ `title_id`
-
+Dataset for use as part of the DSCI 320 final visualization project. University of British Columbia, 2023. 
 
 ---
 
@@ -65,39 +9,43 @@
 1. Amazon bestsellers ([link](https://www.kaggle.com/datasets/sootersaalu/amazon-top-50-bestselling-books-2009-2019)) 
   - "Dataset on Amazon's Top 50 bestselling books from 2009 to 2019. Contains 550 books, data has been categorized into fiction and non-fiction using Goodreads."  
 2. Conlit ([link](https://figshare.com/articles/dataset/CONLIT/21166171/1?file=37535605))
+   - "This dataset includes derived data on a collection of ca. 2,700 books in English published between 2001-2021 and spanning twelve different genres."
 3. Goodreads best books ever ([link](https://zenodo.org/record/4265096#.ZAgSxOzMKvA))
+   - "The dataset contains 25 variables and 52478 records corresponding to books on the GoodReads Best Books Ever list (the larges list on the site)."
 4. New York Times (NYT) bestsellers ([link](https://www.kaggle.com/datasets/dhruvildave/new-york-times-best-sellers))
+   - "The data contains Best Sellers List published by The New York Times every Sunday. The temporal range is from 03-Jan-2010 to 29-Dec-2019 which makes it a whole decade of data. Each week, 5 books are named as best sellers for each category."
 
 **Column Descriptions**
-9. ``
-10. ``
-11. ``
-12. ``
-13. ``
-14. ``
-15. ``
-16. ``
-17. ``
-18. ``
-19. ``
-20. ``
-21. ``
-22. ``
-23. `` 
 
-| Column      | Description | Dataset Source |
-| ----------- | ----------- |  -----------   |
-| 1. `title` | Title of the book (str) | Amazon |
-| 2. `amazon_author` | Author (first and last name) of the book (str) | Amazon |
-| 3. `amazon_rating` | Rating of the book given by Amazon user on a scale of 1 to 5 (float) | Amazon |
-| 4. `amazon_num_reviews` | Number of written reviews of the book given on Amazon (int) | Amazon |
-| 5. `amazon_price`  | Price of the book as of October 13, 2020 (int) | Amazon |
-| 6. `amazon_year` | Year the book was ranked on the bestsellers list | Amazon |
-| 7. `amazon_genre` | Whether the book is fiction or non-fiction (str) | Amazon |
-| 8. `conlit_genre` |  | Amazon |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| Column      | Description | Dataset Source | Column Name in Original Dataset |
+| ----------- | ----------- |  -----------   |  -----------   |
+| 1. `title` | Title of the book (str) | Amazon | `Name` | 
+| 2. `amazon_author` | Author (first and last name) of the book (str) | Amazon | `Author` | 
+| 3. `amazon_rating` | Rating of the book given by Amazon user on a scale of 1 to 5 (float) | Amazon | `User Rating` | 
+| 4. `amazon_num_reviews` | Number of written reviews of the book given on Amazon (int) | Amazon | `Reviews` | 
+| 5. `amazon_price`  | Price of the book as of October 13, 2020 (int) | Amazon | `Price` | 
+| 6. `amazon_year` | Year the book was ranked on the bestsellers list | Amazon | `Year` | 
+| 7. `amazon_genre` | Whether the book is fiction or non-fiction (str) | Amazon | `Genre` | 
+| 8. `conlit_genre` | Genre of the book, lists 1 genre out of 12 categories (str) | Conlit | `Genre` | 
+| 9. `conlit_pubdate` |  | Conlit | `Pubdate` | 
+| 10. `conlit_author_gender` |  | Conlit | `Author_Gender` | 
+| 11. `conlit_author_nationality` |  | Conlit | `Author_Nationality` | 
+| 12. `conlit_total_ratings` |  | Conlit | `total_ratings` | 
+| 13. `goodreads_rating` |  | Goodreads | `rating` | 
+| 14. `goodreads_series` |  | Goodreads | `series` | 
+| 15. `goodreads_genres` |  | Goodreads | `genres` | 
+| 16. `goodreads_edition` |  | Goodreads | `edition` | 
+| 17. `goodreads_publisher` |  | Goodreads | `publisher` | 
+| 18. `goodreads_publish_date` |  | Goodreads | `publishDate` | 
+| 19. `goodreads_first_publish_date` |  | Goodreads | `firstPublishDate` | 
+| 20. `goodreads_awards` |  | Goodreads | `awards` | 
+| 21. `goodreads_num_ratings` |  | Goodreads | `numRatings` | 
+| 22. `goodreads_likedPercent` |  | Goodreads | `likedPercent` | 
+| 23. `goodreads_price` |  | Goodreads | `price` | 
+| 24. `nyt_published_date` |  | NYT | `published_date` | 
+| 25. `nyt_list_name_encoded` |  | NYT | `list_name_encoded` | 
+| 26. `nyt_price` |  | NYT | `price` | 
+| 27. `nyt_weeks_on_list` |  | NYT | `weeks_on_list` | 
 
 
 **Dataset Description**
