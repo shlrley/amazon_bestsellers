@@ -56,18 +56,24 @@ Dataset for use as part of the DSCI 320 final visualization project. University 
 ---
 
 ### **Tips For Data Wrangling**
+
+The columns `goodreads_genres` and `goodreads_awards` contain lists of strings, but unfortunately if you load the data from the .csv file the list will be of a string type. For example: 
+- "['fantasy', 'science-fiction']" instead of 
+- ['fantasy', 'science-fiction']
+
+To fix this, you could try either of the following: 
+
 1. Use `ast.literal_eval()` to convert columns with lists (but that are string type) to list type so that you can explode the dataframe (similar to what was done in assignmnent 5) 
 
 ```
 df['goodreads_genres'] = df.goodreads_genres.apply(lambda s: list(ast.literal_eval(s)))
 ```
 
-2. Instead of tip 1, read the dataframe from the pickle file (i.e use `pd.read_pickle()` instead of `pd.read_csv()`) - this will convert the column type from a string to a list automatically 
+2. OR instead of tip 1, you can read the dataframe from the pickle file (i.e use `pd.read_pickle()` instead of `pd.read_csv()`) - this will convert the column type from a string to a list automatically 
 
 ```
 df = pd.read_pickle('amazon_conlit_goodreads_nyt.pkl')
 ```
-
 
 ---
 
