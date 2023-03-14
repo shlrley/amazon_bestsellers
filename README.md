@@ -57,12 +57,6 @@
 - `price` > `goodreads_price`
 + `title_id`
 
----
-
-** This dataset is not perfect and there may be some incorrect matches (i.e the paperback version of a book in the amazon bestsellers may have been matched with a hardcover in the goodreads dataset etc., so be wary of columns such as price or publish date)
-
-
-
 
 ---
 
@@ -88,14 +82,19 @@
 
 
 **Tips For Data Wrangling**
-1. Use `parse_dates=['col1', 'col2']` to convert columns with dates to date type, for example:
+1. Use `ast.literal_eval()` to convert columns with lists (but that are string type) to list type so that you can explode the dataframe (similar to what was done in assignmnent 5) 
+
 ```
-# read in the dataframe + parse date columns 
-df = pd.read_csv('amazon_conlit_goodreads_nyt.csv', parse_dates=['amazon_year', 
-                                                                'conlit_pubdate', 
-                                                                'goodreads_publish_date', 
-                                                                'goodreads_first_publish_date', 
-                                                                'nyt_published_date'])
+df['goodreads_genres'] = df.goodreads_genres.apply(lambda s: list(ast.literal_eval(s)))
 ```
 
-2. Use `ast.literal_eval()` to convert columns with lists (but that are string type) to list type so that you can explode the dataframe (similar to what was done in assignmnent 5) 
+2. Instead of tip 1, read the dataframe from the pickle file (i.e use `pd.read_pickle()` instead of `pd.read_csv()`) - this will convert the column type from a string to a list automatically 
+
+```
+df = pd.read_pickle('amazon_conlit_goodreads_nyt.pkl')
+```
+
+
+
+** This dataset is not perfect and there may be some incorrect matches (i.e the paperback version of a book in the amazon bestsellers may have been matched with a hardcover in the goodreads dataset etc., so be wary of columns such as price or publish date)
+
