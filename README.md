@@ -8,11 +8,11 @@ Dataset for use as part of the DSCI 320 final visualization project. University 
 
 1. [Amazon bestsellers](https://www.kaggle.com/datasets/sootersaalu/amazon-top-50-bestselling-books-2009-2019) 
    - "Dataset on Amazon's Top 50 bestselling books from 2009 to 2019. Contains 550 books, data has been categorized into fiction and non-fiction using Goodreads."  
-2. Conlit ([link](https://figshare.com/articles/dataset/CONLIT/21166171/1?file=37535605))
+2. [Conlit](https://figshare.com/articles/dataset/CONLIT/21166171/1?file=37535605)
    - "This dataset includes derived data on a collection of ca. 2,700 books in English published between 2001-2021 and spanning twelve different genres."
-3. Goodreads best books ever ([link](https://zenodo.org/record/4265096#.ZAgSxOzMKvA))
+3. [Goodreads best books ever](https://zenodo.org/record/4265096#.ZAgSxOzMKvA)
    - "The dataset contains 25 variables and 52478 records corresponding to books on the GoodReads Best Books Ever list (the larges list on the site)."
-4. New York Times (NYT) bestsellers ([link](https://www.kaggle.com/datasets/dhruvildave/new-york-times-best-sellers))
+4. [New York Times (NYT) bestsellers](https://www.kaggle.com/datasets/dhruvildave/new-york-times-best-sellers)
    - "The data contains Best Sellers List published by The New York Times every Sunday. The temporal range is from 03-Jan-2010 to 29-Dec-2019 which makes it a whole decade of data. Each week, 5 books are named as best sellers for each category."
 
 **Column Descriptions**
