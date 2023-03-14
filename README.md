@@ -77,5 +77,5 @@ df = pd.read_pickle('amazon_conlit_goodreads_nyt.pkl')
 
 ---
 
-** This dataset is not perfect and there may be some incorrect matches (i.e the paperback version of a book in the amazon bestsellers may have been matched with a hardcover in the goodreads dataset etc., so be wary of columns such as price or publish date)
+**This dataset is not perfect and there may be some incorrect matches (i.e the paperback version of a book in the amazon bestsellers may have been matched with a hardcover in the goodreads dataset etc., so be wary of columns such as price or publish date)
 
