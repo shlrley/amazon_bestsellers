@@ -1,4 +1,4 @@
-# amazon_bestsellers and other datasets
+# Amazon bestselling books and other datasets
 
 Dataset for use as part of the DSCI 320 final visualization project. University of British Columbia, 2023. 
 
@@ -27,25 +27,25 @@ Dataset for use as part of the DSCI 320 final visualization project. University 
 | 6. `amazon_year` | Year the book was ranked on the bestsellers list | Amazon | `Year` | 
 | 7. `amazon_genre` | Whether the book is fiction or non-fiction (str) | Amazon | `Genre` | 
 | 8. `conlit_genre` | Genre of the book, lists 1 genre out of 12 categories (str) | Conlit | `Genre` | 
-| 9. `conlit_pubdate` |  | Conlit | `Pubdate` | 
-| 10. `conlit_author_gender` |  | Conlit | `Author_Gender` | 
-| 11. `conlit_author_nationality` |  | Conlit | `Author_Nationality` | 
-| 12. `conlit_total_ratings` |  | Conlit | `total_ratings` | 
-| 13. `goodreads_rating` |  | Goodreads | `rating` | 
-| 14. `goodreads_series` |  | Goodreads | `series` | 
-| 15. `goodreads_genres` |  | Goodreads | `genres` | 
-| 16. `goodreads_edition` |  | Goodreads | `edition` | 
-| 17. `goodreads_publisher` |  | Goodreads | `publisher` | 
-| 18. `goodreads_publish_date` |  | Goodreads | `publishDate` | 
-| 19. `goodreads_first_publish_date` |  | Goodreads | `firstPublishDate` | 
-| 20. `goodreads_awards` |  | Goodreads | `awards` | 
-| 21. `goodreads_num_ratings` |  | Goodreads | `numRatings` | 
-| 22. `goodreads_likedPercent` |  | Goodreads | `likedPercent` | 
-| 23. `goodreads_price` |  | Goodreads | `price` | 
-| 24. `nyt_published_date` |  | NYT | `published_date` | 
-| 25. `nyt_list_name_encoded` |  | NYT | `list_name_encoded` | 
-| 26. `nyt_price` |  | NYT | `price` | 
-| 27. `nyt_weeks_on_list` |  | NYT | `weeks_on_list` | 
+| 9. `conlit_pubdate` | Original publication date of the book | Conlit | `Pubdate` | 
+| 10. `conlit_author_gender` | Gender of the author (M/F/O) (str) | Conlit | `Author_Gender` | 
+| 11. `conlit_author_nationality` | Nationality of the author (str) | Conlit | `Author_Nationality` | 
+| 12. `conlit_total_ratings` | Total number of ratings of the book on Goodreads as of May 23, 2022 (int) | Conlit | `total_ratings` | 
+| 13. `goodreads_rating` | Global Goodreads rating (float) | Goodreads | `rating` | 
+| 14. `goodreads_series` | Series name (str) | Goodreads | `series` | 
+| 15. `goodreads_genres` | Genre(s) of the book (list[str]) | Goodreads | `genres` | 
+| 16. `goodreads_edition` | Type of edition (str) | Goodreads | `edition` | 
+| 17. `goodreads_publisher` | Publisher of book (str) | Goodreads | `publisher` | 
+| 18. `goodreads_publish_date` | Publication date | Goodreads | `publishDate` | 
+| 19. `goodreads_first_publish_date` | Publication date of first edition | Goodreads | `firstPublishDate` | 
+| 20. `goodreads_awards` | List of awards received by the book (list[str]) | Goodreads | `awards` | 
+| 21. `goodreads_num_ratings` | Number of total ratings on Goodreads (int) | Goodreads | `numRatings` | 
+| 22. `goodreads_likedPercent` | Percent of ratings over 2 stars on Goodreads (float) | Goodreads | `likedPercent` | 
+| 23. `goodreads_price` | Price of the book (extracted from Iberibro) (float) | Goodreads | `price` | 
+| 24. `nyt_published_date` | Date the list was published | NYT | `published_date` | 
+| 25. `nyt_list_name_encoded` | Category of the list (str) | NYT | `list_name_encoded` | 
+| 26. `nyt_price` | Price of the book (float) | NYT | `price` | 
+| 27. `nyt_weeks_on_list` | Number of weeks the book was on the best sellers list (int) | NYT | `weeks_on_list` | 
 
 
 ### **Final Dataset Description**
