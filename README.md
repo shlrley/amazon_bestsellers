@@ -54,3 +54,7 @@
 - `likedPercent` > `goodreads_liked_percent`
 - `price` > `goodreads_price`
 + `title_id`
+
+---
+
+** This dataset is not perfect and there may be some incorrect matches (i.e the paperback version of a book in the amazon bestsellers may have been matched with a hardcover in the goodreads dataset etc., so be wary of columns such as price or publish date)
