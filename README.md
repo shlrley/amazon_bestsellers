@@ -2,7 +2,7 @@
 
 
 `amazon_bestsellers_df`
-**Columns:**
+**columns:**
 - `Name` > `title`
 - `Author` > `amazon_author`
 - `User Rating` > `amazon_rating`
@@ -12,8 +12,10 @@
 - `Genre` > `amazon_genre`
 + `title_id`
 
+---
+
 `conlit_meta_df`
-**Columns:** 
+**columns:** 
 - `Work_Title` > `title_id`
 - `Category` > `conlit_category`
 - `Language` > 
@@ -31,8 +33,10 @@
 - `goodreads_avg`
 - `total_ratings` 
 
+---
+
 `goodreads_bestbooksever_df`
-**Columns:** 
+**columns:** 
 - `title`
 - `series` 
 - `author`
