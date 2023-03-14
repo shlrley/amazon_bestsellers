@@ -1,6 +1,8 @@
 # amazon_bestsellers
 
 
+----
+
 `amazon_bestsellers_df`
 **columns:**
 - `Name` > `title`
@@ -37,7 +39,7 @@
 
 `goodreads_bestbooksever_df`
 **columns:** 
-- `title` 
+- `title` > `title_2`
 - `series` > `goodreads_series`
 - `author` > `goodreads_author`
 - `rating` > `goodreads_rating`
@@ -58,3 +60,42 @@
 ---
 
 ** This dataset is not perfect and there may be some incorrect matches (i.e the paperback version of a book in the amazon bestsellers may have been matched with a hardcover in the goodreads dataset etc., so be wary of columns such as price or publish date)
+
+
+
+
+---
+
+**Merged Datasets**
+
+1. Amazon bestsellers 
+2. Conlit 
+3. Goodreads 
+4. NYT 
+
+**Column Descriptions**
+1. `title`
+2. `amazon_author`
+3. `amazon_rating`
+4. `amazon_num_reviews`
+5. `amazon_price` 
+
+
+**Dataset Description**
+- Rows: 366 
+- Columns: 27 
+- Unique books: 222 
+
+
+**Tips For Data Wrangling**
+1. Use `parse_dates=['col1', 'col2']` to convert columns with dates to date type, for example:
+```
+# read in the dataframe + parse date columns 
+df = pd.read_csv('amazon_conlit_goodreads_nyt.csv', parse_dates=['amazon_year', 
+                                                                'conlit_pubdate', 
+                                                                'goodreads_publish_date', 
+                                                                'goodreads_first_publish_date', 
+                                                                'nyt_published_date'])
+```
+
+2. Use `ast.literal_eval()` to convert columns with lists (but that are string type) to list type so that you can explode the dataframe (similar to what was done in assignmnent 5) 
