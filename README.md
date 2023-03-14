@@ -4,7 +4,7 @@ Dataset for use as part of the DSCI 320 final visualization project. University 
 
 ---
 
-**Merged Datasets**
+### **Merged Datasets**
 
 1. [Amazon bestsellers](https://www.kaggle.com/datasets/sootersaalu/amazon-top-50-bestselling-books-2009-2019) 
    - "Dataset on Amazon's Top 50 bestselling books from 2009 to 2019. Contains 550 books, data has been categorized into fiction and non-fiction using Goodreads."  
@@ -15,7 +15,7 @@ Dataset for use as part of the DSCI 320 final visualization project. University 
 4. [New York Times (NYT) bestsellers](https://www.kaggle.com/datasets/dhruvildave/new-york-times-best-sellers)
    - "The data contains Best Sellers List published by The New York Times every Sunday. The temporal range is from 03-Jan-2010 to 29-Dec-2019 which makes it a whole decade of data. Each week, 5 books are named as best sellers for each category."
 
-**Column Descriptions**
+### **Column Descriptions**
 
 | Column      | Description | Dataset Source | Column Name in Original Dataset |
 | ----------- | ----------- |  -----------   |  -----------   |
@@ -48,14 +48,14 @@ Dataset for use as part of the DSCI 320 final visualization project. University 
 | 27. `nyt_weeks_on_list` |  | NYT | `weeks_on_list` | 
 
 
-**Dataset Description**
+### **Final Dataset Description**
 - Rows: 366 
 - Columns: 27 
 - Unique books: 222 
 
 ---
 
-**Tips For Data Wrangling**
+### **Tips For Data Wrangling**
 1. Use `ast.literal_eval()` to convert columns with lists (but that are string type) to list type so that you can explode the dataframe (similar to what was done in assignmnent 5) 
 
 ```
