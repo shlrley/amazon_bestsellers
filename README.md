@@ -62,10 +62,10 @@
 
 **Merged Datasets**
 
-1. Amazon bestsellers 
-2. Conlit 
-3. Goodreads 
-4. NYT 
+1. Amazon bestsellers ([link](https://www.kaggle.com/datasets/sootersaalu/amazon-top-50-bestselling-books-2009-2019)) 
+2. Conlit ([link](https://figshare.com/articles/dataset/CONLIT/21166171/1?file=37535605))
+3. Goodreads best books ever ([link](https://zenodo.org/record/4265096#.ZAgSxOzMKvA))
+4. New York Times bestsellers ([link](https://www.kaggle.com/datasets/dhruvildave/new-york-times-best-sellers))
 
 **Column Descriptions**
 1. `title`
@@ -73,8 +73,29 @@
 3. `amazon_rating`
 4. `amazon_num_reviews`
 5. `amazon_price` 
+6. `amazon_year`
+7. `amazon_genre`
+8. `conlit_genre`
+9. ``
+10. ``
+11. ``
+12. ``
+13. ``
+14. ``
+15. ``
+16. ``
+17. ``
+18. ``
+19. ``
+20. ``
+21. ``
+22. ``
+23. `` 
 
-
+| Column      | Description | Dataset Source |
+| ----------- | ----------- |  -----------   |
+| ...      | ...       |                |
+| ...   | ...        |                |
 
 
 **Dataset Description**
